@@ -1,0 +1,54 @@
+.container {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px 25px 20px 25px;
+  background-color: #7e60bf;
+  border-radius: 20px;
+}
+.signInForm {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+h1 {
+  text-align: center;
+  color: #fff;
+}
+.signInForm input {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 12px;
+  padding: 8px;
+  font-size: 15px;
+}
+.signInForm label {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#rememberMe {
+  width: 40px;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+}
+.signInForm button {
+  width: 150px;
+  height: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+  border: 0;
+}
+.signInForm button:hover {
+  background-color: rgb(212, 212, 212);
+  cursor: pointer;
+}
+
+.errorText {
+  text-align: center;
+  color: rgb(189, 0, 0);
+  font-size: 18px;
+}

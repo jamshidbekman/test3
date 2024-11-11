@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Course Purchase Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Purchase Course</h1>
+      <form class="form">
+        <label for="course-name">Course Name:</label>
+        <input name="courseName" type="text" id="courseName" value="JavaScript Basics" readonly />
+
+        <fieldset>
+          <legend>Payment Method:</legend>
+          <label> <input type="radio" name="paymentMethod" value="card" onclick="toggleCardInput()" /> Card </label>
+          <label> <input type="radio" name="paymentMethod" value="click" onclick="toggleCardInput()" /> Click </label>
+          <label> <input type="radio" name="paymentMethod" value="payme" onclick="toggleCardInput()" /> Payme </label>
+        </fieldset>
+
+        <div id="card-number-container" style="display: none">
+          <label for="card-number">Card Number:</label>
+          <input type="text" id="cardNumber" name="card-number" placeholder="XXXX-XXXX-XXXX-XXXX" />
+        </div>
+
+        <label for="promocode">Promocode (optional):</label>
+        <input type="text" id="promocode" name="promocode" placeholder="Enter promocode" />
+        <div class="validation"></div>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    <script>
+      function toggleCardInput() {
+        const cardInput = document.getElementById("card-number-container");
+        const isCardSelected = document.querySelector('input[name="paymentMethod"]:checked').value === "card";
+        cardInput.style.display = isCardSelected ? "block" : "none";
+      }
+    </script>
+    <script src="app.js"></script>
+  </body>
+</html>

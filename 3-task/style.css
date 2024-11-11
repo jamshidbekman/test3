@@ -1,0 +1,46 @@
+.container {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 25px;
+  background-color: #d7b26d;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+h1 {
+  text-align: center;
+}
+form {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+form input {
+  width: 95%;
+  height: 15px;
+  padding: 10px;
+}
+form textarea {
+  max-width: 93%;
+  padding: 15px;
+}
+
+form label {
+  text-align: left;
+}
+form button {
+  width: 150px;
+  height: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+  border: 0;
+}
+form button:hover {
+  background-color: rgb(212, 212, 212);
+  cursor: pointer;
+}

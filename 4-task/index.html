@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Search form</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Search</h1>
+      <form>
+        <label for="search">Search:</label>
+        <input required type="search" name="search" placeholder="search" />
+        <div class="filter">
+          <label>Kurs turini tanlang:</label>
+          <label>
+            Boshlang'ich:
+            <input type="checkbox" name="beginner" />
+          </label>
+          <label>
+            O'rta daraja
+            <input type="checkbox" name="intermediate" />
+          </label>
+          <label>
+            Professional
+            <input type="checkbox" name="professional" />
+          </label>
+          <label for="range">Narx oralig'ini tanlang:</label>
+          <input min="100000" max="1000000" value="300000" type="range" name="range" id="range" />
+          <div class="rangeValue"></div>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

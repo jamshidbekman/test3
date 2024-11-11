@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Sign up</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Sign up</h1>
+      <form class="signUpForm">
+        <label>Name:</label>
+        <input placeholder="Name" required type="text" name="name" />
+        <label>Email:</label>
+        <input placeholder="Email" required type="email" name="email" />
+        <label>Phone number:</label>
+        <input placeholder="Phone number" required type="number" name="phone" />
+        <label>Age:</label>
+        <input placeholder="Age" required type="number" name="age" />
+        <label>Gender:</label>
+        <div class="gender">
+          <label>Male: <input type="radio" name="gender" value="male" /></label>
+          <label>Female:<input type="radio" name="gender" value="female" /></label>
+        </div>
+        <label>Skill:</label>
+        <select required name="skill">
+          <option disabled selected value="notSelected">Choose</option>
+          <option value="javascript">Javascript</option>
+          <option value="javascript">Java</option>
+          <option value="javascript">Python</option>
+        </select>
+        <div class="errorText"></div>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

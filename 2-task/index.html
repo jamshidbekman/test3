@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Sign up</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Sign in</h1>
+      <form class="signInForm">
+        <label for="username">Username:</label>
+        <input required placeholder="username" type="text" name="username" id="username" />
+        <label for="password">Password:</label>
+        <input required placeholder="password" type="password" name="password" id="password" />
+        <label>
+          Remember me
+          <input type="checkbox" name="rememberMe" id="rememberMe" />
+        </label>
+        <div class="errorText"></div>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
